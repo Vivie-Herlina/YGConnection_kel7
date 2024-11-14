@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Page</title>
+    <link rel="stylesheet" href="style_community.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img src="img/logo_YG.png" alt="YG Entertainment Logo" class="logo">
+            <nav>
+                <a href="home_logged.html">Home</a>
+                <a href="product.html">Product</a>
+                <a href="community.html">Community</a>
+            </nav>
+        </div>
+        
+        <button class="user-button">
+            <img src="img/profile.png" alt="User Icon" class="icon-img"> Nurzaba
+        </button>
+        
+            <div class="dropdown">
+              <ul>
+                <li><a href="Cart.html">Cart</a></li>
+                <li><a href="poin.html">Poin</a></li>
+                <li><a href="transcation.html">Transaction</a></li>
+                <li><a href="account.html">Profile</a></li>
+                <li><a href="logout.html">Log Out</a></li>
+              </ul>
+            </div>
+          </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search..." />
+            </div>
+            <div class="sidebar-card">
+                <div class="sidebar-section">
+                    <h3>Popular Topics</h3>
+                    <ul>
+                        <li><a href="#">Latest News About BabyMonster</a></li>
+                        <li><a href="#">Concert Schedule</a></li>
+                        <li><a href="#">BLACKPINK Comeback</a></li>
+                        <li><a href="#">The Next Merchandise</a></li>
+                        <li><a href="#">Newest Album</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-section">
+                    <h3>Suggest Topics</h3>
+                    <ul>
+                        <li><a href="#">Fashion and Style Lisa Manoban</a></li>
+                        <li><a href="#">New Artist Debut...</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sidebar-card">
+                <h3>Upcoming Event</h3>
+                <ul>
+                    <li><a href="#">Fan Meeting WINNER</a></li>
+                    <li><a href="#">BIGBANG Anniversary Event</a></li>
+                    <li><a href="#">Korean BLACKPINK World Tour</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="feed">
+            <div class="create-post">
+                <textarea placeholder="What's on your mind?"></textarea>
+                <div class="post-actions">
+                    <label for="photo-upload"><img src="img/img.png" alt="Photo Icon"></label>
+                    <input type="file" id="photo-upload" accept="image/*" style="display: none;">
+                    <label for="video-upload"><img src="img/vid.png" alt="Video Icon"></label>
+                    <input type="file" id="video-upload" accept="video/*" style="display: none;">
+                    <label for="file-upload"><img src="img/file.png" alt="File Icon"></label>
+                    <input type="file" id="file-upload" style="display: none;">
+                    <label for="emoji"><img src="img/emot.png" alt="File Icon"></label>
+                    <input type="emoji" id="emoji" style="display: none;">
+                </div>
+            </div>
+
+            <!-- Post Filters (Hashtag Menu) -->
+            <div class="hashtag-menu">
+                <button class="filter-button active">All Post</button>
+                <button class="filter-button">Trending Post</button>
+                <button class="filter-button">Friends Follow</button>
+                <button class="filter-button">#Concert</button>
+                <button class="filter-button">#Jedag Jedug</button>
+            </div>
+
+            <!-- Posts -->
+            <div class="post">
+                <div class="post-header">
+                    <img src="img/pp1.png" alt="User Icon" class="profile-icon">
+                    <span class="post-username">Vivie Nurzaba</span>
+                    <span class="post-time">2h ago</span>
+                </div>
+                <p>BLACKPINK will comeback at 2025</p>
+                <img src="img/com_bp.png" alt="Post Image" class="post-image">
+                <div class="post-footer">
+                    <button class="footer-button">
+                        <img src="img/like.png" alt="Like Icon" class="footer-icon"> Like
+                    </button>
+                    <button class="footer-button">
+                        <img src="img/comment.png" alt="Comment Icon" class="footer-icon"> Comment
+                    </button>
+                    <button class="footer-button">
+                        <img src="img/share.png" alt="Share Icon" class="footer-icon"> Share
+                    </button>
+                </div>                
+            </div>
+
+            <div class="post">
+                <div class="post-header">
+                    <img src="img/pp2.png" alt="User Icon" class="profile-icon">
+                    <span class="post-username">Vivie Nurzaba</span>
+                    <span class="post-time">5h ago</span>
+                </div>
+                <p>💖💖💖</p>
+                <img src="img/com_trea.png" alt="Post Image" class="post-image">
+                <div class="post-footer">
+                    <button class="footer-button">
+                        <img src="img/like.png" alt="Like Icon" class="footer-icon"> Like
+                    </button>
+                    <button class="footer-button">
+                        <img src="img/comment.png" alt="Comment Icon" class="footer-icon"> Comment
+                    </button>
+                    <button class="footer-button">
+                        <img src="img/share.png" alt="Share Icon" class="footer-icon"> Share
+                    </button>
+                </div>  
+                
+                <div class="comment-section" style="display:none;">
+                    <textarea placeholder="Write a comment..."></textarea>
+                    <button class="submit-comment">Post Comment</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Terms of Use</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="cookie.html">Cookie Policy</a>
+            <a href="#">Announcements</a>
+        </div>
+        <div class="footer-info">
+            <p>Brand Inc. | CEO: SHABRINA ZAHRA AULIA CALL CENTER (+62)21-3452-1312 FAX (+62)21-4242-6565</p>
+            <p>ADDRESS Jl. KH. Ahmad Dahlan Kby. No.14A, RT.2/RW.1, Kramat Pela, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12130</p>
+            <p>© BRAND COMPANY Inc.</p>
+        </div>
+    </footer>
+
+    <script src="filter.js"></script>
+    <script src="script_community.js"></script>
+    <script src="home_script.js"></script>
+</body>
+</html>

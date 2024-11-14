@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="Cart.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+        <img src="img/logo_YG.png" alt="YG Entertainment Logo" class="logo">
+        <nav>
+            <a href="home_logged.html">Home</a>
+            <a href="product.html">Product</a>
+            <a href="community.html">Community</a>
+            <a href="about_us_logged.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </div>
+    <button class="user-button">
+        <img src="img/profile.png" alt="User Icon" class="icon-img"> Nurzaba
+    </button>
+    <div class="dropdown">
+      <ul>
+                <li><a href="Cart.html">Cart</a></li>
+                <li><a href="poin.html">Poin</a></li>
+                <li><a href="transcation.html">Transaction</a></li>
+                <li><a href="account.html">Profile</a></li>
+                <li><a href="logout.html">Log Out</a></li>
+      </ul>
+    </div>
+  </header>  
+
+  <main class="cart">
+    <h1>Cart</h1>
+    <p class="cart-info">
+        <img src="img/warning.png" alt="Info Icon">
+        Products in carts will be deleted after 90 days (Removed sold out).
+    </p>
+
+    <div class="cart-items">
+        <label class="select-all">
+            <input type="checkbox" id="selectAll">
+            <span>Select all items</span>
+        </label>
+
+        <!-- Item 1 -->
+        <div class="cart-item" data-price="350000">
+            <input type="checkbox" class="item-select">
+            <img src="img/BLIK MEMBERSHIP.png" alt="BLACKPINK GLOBAL OFFICIAL FANCLUB MEMBERSHIP">
+            <div class="item-details">
+                <h3>BLACKPINK GLOBAL OFFICIAL FANCLUB MEMBERSHIP</h3>
+                <p class="pre-order">Pre-Order</p>
+            </div>
+            <div class="item-controls">
+                <button onclick="updateQuantity(this, -1)" class="minus-btn">-</button>
+                <span class="quantity">1</span>
+                <button onclick="updateQuantity(this, 1)" class="plus-btn">+</button>
+                <span class="item-price">Rp350.000</span>
+                <button onclick="removeItem(this)" class="remove-btn">X</button>
+            </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="cart-item" data-price="300000">
+            <input type="checkbox" class="item-select">
+            <img src="img/Brooch.png" alt="Brooch By BabyMonster">
+            <div class="item-details">
+                <h3>Brooch By BabyMonster</h3>
+                <p class="pre-order">Pre-Order</p>
+            </div>
+            <div class="item-controls">
+                <button onclick="updateQuantity(this, -1)" class="minus-btn">-</button>
+                <span class="quantity">1</span>
+                <button onclick="updateQuantity(this, 1)" class="plus-btn">+</button>
+                <span class="item-price">Rp300.000</span>
+                <button onclick="removeItem(this)" class="remove-btn">X</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-total">
+        <span>Total</span>
+        <span id="total-price">Rp0</span>
+        <a href="detail_product.html" class="checkout-btn">Check Out</a>
+    </div>
+</main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="#">Terms of Use</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="cookie.html">Cookie Policy</a>
+      <a href="#">Announcements</a>
+    </div>
+    <div class="footer-info">
+      <p>Brand Inc. | CEO: SHABRINA ZAHRA AULIA CALL CENTER (+62)21-3452-1312 FAX (+62)21-4242-6565</p>
+      <p>ADDRESS Jl. KH. Ahmad Dahlan Kby. No.14A, RT.2/RW.1, Kramat Pela, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12130</p>
+      <p>© BRAND COMPANY Inc.</p>
+    </div>
+  </footer>
+
+  <script src="cart.js"></script>
+  <script src="home_script.js"></script>
+</body>
+</html>

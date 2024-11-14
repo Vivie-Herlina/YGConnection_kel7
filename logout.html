@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout Modal</title>
+    <link rel="stylesheet" href="style_logout.css">
+</head>
+<body>
+    <div class="background-overlay" id="backgroundOverlay"></div>
+
+    <!-- Logout Modal -->
+    <div class="logout-modal" id="logoutModal">
+    
+        <h2>Are you sure you want to logout?</h2>
+        <div class="button-group">
+            <button onclick="logout()">Logout</button>
+            <button onclick="closeModal()">Cancel</button>
+        </div>
+    </div>
+
+    <script>
+        function logout() {
+            // Show the dark overlay indicating the user has logged out
+            document.getElementById('backgroundOverlay').style.display = 'block';
+            document.getElementById('logoutModal').style.display = 'none';
+            window.location.href = 'home.html';
+        }
+
+        function closeModal() {
+            // Close the modal without logging out
+            document.getElementById('logoutModal').style.display = 'none';
+        }
+
+        // Open the modal initially
+        window.onload = function() {
+            document.getElementById('logoutModal').style.display = 'flex';
+        }
+    </script>
+</body>
+</html>

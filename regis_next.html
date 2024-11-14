@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Brand Account</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style_login.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo_YG.png" alt="Brand Logo" class="logo">
+    </header>
+    
+    <main>
+        <div class="login-container">
+            <div class="header-with-icon">
+                <div class="icon-button">
+                    <img src="img/back.png" alt="Icon" onclick="window.location.href='regis_next.html'">
+                </div>                
+                <h1>YGEntertainment Account</h1>
+            </div>
+            <p>Create your YGEntertainment account</p>
+            <form action="submit_signup.html" method="POST">
+                <label for="password">Password</label>
+                <div class="password-container">
+                    <input type="password" id="password" name="password" placeholder="Enter Your Password" required>
+                    <i class="fas fa-eye toggle-password" onclick="togglePassword('password')"></i>
+                </div>
+
+                <label for="confirm-password">Confirmation Password</label>    
+                <div class="password-container">
+                    <input type="password" id="confirm-password" name="confirm_password" placeholder="Enter Your Password" required>
+                    <i class="fas fa-eye toggle-password" onclick="togglePassword('confirm-password')"></i>
+                </div>
+
+                <button type="button" class="login-button" onclick="window.location.href='verifikasi_email.html'">Confirm</button>
+            </form>
+
+            <div class="links">
+                <p>Already have an account? <a href="login.html">Log In</a></p>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-links">
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Announcements</a>
+        </div>
+        <div class="footer-info">
+            <p>Brand Inc. | CEO: SHABRINA ZAHRA AULIA CALL CENTER (+62)21-3452-1312 FAX (+62)21-4242-6565</p>
+            <p>ADDRESS Jl. KH. Ahmad Dahlan Kby. No.14A, RT.2/RW.1, Kramat Pela, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12130</p>
+            <p>© BRAND COMPANY Inc.</p>
+        </div>
+    </footer>
+
+    <script>
+        function togglePassword(id) {
+            var passwordField = document.getElementById(id);
+            var icon = passwordField.nextElementSibling;
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                icon.classList.remove("fa-eye");
+                icon.classList.add("fa-eye-slash");
+            } else {
+                passwordField.type = "password";
+                icon.classList.remove("fa-eye-slash");
+                icon.classList.add("fa-eye");
+            }
+        }
+    </script>
+</body>
+</html>

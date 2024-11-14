@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details Item</title>
+    <link rel="stylesheet" href="style_product_detail.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img src="img/logo_YG.png" alt="YG Entertainment Logo" class="logo">
+            <nav>
+                <a href="home_logged.html">Home</a>
+                <a href="product.html">Product</a>
+                <a href="community.html">Community</a>
+                <a href="about_us_logged.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+        <button class="user-button">
+            <img src="img/profile.png" alt="User Icon" class="icon-img"> Nurzaba
+        </button>
+        
+        <div class="dropdown">
+            <ul>
+                <li><a href="Cart.html">Cart</a></li>
+                <li><a href="poin.html">Poin</a></li>
+                <li><a href="transaction.html">Transaction</a></li>
+                <li><a href="account.html">Profile</a></li>
+                <li><a href="logout.html">Log Out</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="product-container">
+            <div class="product-image">
+                <img src="img/member_bp.png" alt="BLINK Membership Card">
+            </div>
+            <div class="product-details">
+                <h4>Blackpink</h4>
+                <h3>BLACKPINK GLOBAL OFFICIAL FANCLUB BLINK MEMBERSHIP</h3>
+                <p class="price">Rp350.000</p>
+                <p class="status">For Pre-Order</p>
+                <p class="shipping-date">Scheduled Shipping Start Date Nov 21 2024 - Nov 28 2024</p>
+                <div class="points">
+                    <span>350 points</span>
+                    <div class="quantity">
+                        <button onclick="decreaseQuantity()">-</button>
+                        <input type="text" id="quantityInput" value="1">
+                        <button onclick="increaseQuantity()">+</button>
+                    </div>
+                </div>
+                <p class="total" id="total">Total (1 Item) Rp350.000</p>
+                <div class="buttons">
+                    <button class="add-to-cart" onclick="addToCart()">Add To Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Information Section -->
+        <section class="information">
+            <h3>Information</h3>
+            <table>
+                <tr><td>Product Name</td><td>BLINK MEMBERSHIP</td></tr>
+                <tr><td>Producer or supplier</td><td>YG ENTERTAINMENT Inc.</td></tr>
+                <tr><td>Terms and recommended usage period</td><td>You must use the identical account for YGConnect and YGConnect Shop to receive Membership benefits.</td></tr>
+                <tr><td>Product delivery method</td><td>Membership</td></tr>
+                <tr><td>Minimum system requirements or required software</td><td>Not Applicable</td></tr>
+                <tr><td>Effects of subscription withdrawal, or contract cancellation or termination</td><td>If you cancel/refund the payment for your Membership, you will no longer be able to take advantage of Membership benefits.</td></tr>
+                <tr><td>Telephone number for consumer consultation</td><td>Customer Center: (+62)21-3452-1312</td></tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Terms of Use</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="cookie.html">Cookie Policy</a>
+            <a href="#">Announcements</a>
+        </div>
+        <div class="footer-info">
+            <p>Brand Inc. | CEO: SHABRINA ZAHRA AULIA CALL CENTER (+62)21-3452-1312 FAX (+62)21-4242-6565</p>
+            <p>ADDRESS Jl. KH. Ahmad Dahlan Kby. No.14A, RT.2/RW.1, Kramat Pela, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12130</p>
+            <p>© BRAND COMPANY Inc.</p>
+        </div>
+    </footer>
+    <script src="home_script.js"></script>
+    <script src="product.js"></script>
+</body>
+</html>
